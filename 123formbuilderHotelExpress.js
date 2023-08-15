@@ -10,3 +10,6 @@ const joinedValues = valueOne + ": " + valueTwo + " - " + valueThree ;
 }
 
 window.onchange = joinValues;
+window.onload = joinValues;
+
+
