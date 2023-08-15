@@ -36,7 +36,7 @@ $(document).ready(function(){
 setTimeout(
   function() 
   {
-    $('[data-role="input-row"] select').on('change', function(){
+    $('[data-id="108818319"][data-role="input-row"] select').on('change', function(){
     	var demovalue = $(this).val(); 
 	$("#form [data-role='container'][data-type='repeatable']").hide();
 	$("#form [data-role='container'][data-type='repeatable']:contains('" + demovalue + "')").show();
