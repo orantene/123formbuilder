@@ -6,10 +6,22 @@ setTimeout(function() {
 
 const joinedValues = valueOne + ": " + valueTwo + " - " + valueThree ;
 		   loader.engine.document.getElementById(108821728).setValue(({"value": joinedValues}));
-}, 1000);
+}, 60);
 }
 
 window.onchange = joinValues;
 window.onload = joinValues;
 
 
+
+let x = document.getElementById("form");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+  document.getElementById("price-00000082-prefix-acc").style.backgroundColor = "yellow";  
+}
+
+function myBlurFunction() {
+  document.getElementById("price-00000082-prefix-acc").style.backgroundColor = "";  
+}
