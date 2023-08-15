@@ -11,3 +11,8 @@ const joinedValues = valueOne + ": " + valueTwo + " - " + valueThree ;
 
 window.onchange = joinValues;
 window.onload = joinValues;
+
+    let hotelname = loader.engine.document.getElementById(108818319).getProperty('value.value');
+    document.querySelector("blockquote h5").innerHTML = hotelname;
+    let folionum = loader.engine.document.getElementById(108817871).getProperty('value.value');
+    document.querySelector("blockquote h4").innerHTML = folionum;
