@@ -12,7 +12,7 @@ setTimeout(function() {
     let dateYear = document.querySelector("[data-ui-role='ui-element'] #date-00000052-year font font").innerText;
     document.querySelector("blockquote h3").innerHTML = dateDay +'/'+ dateMonth +'/'+ dateYear;
     
-    let folionum = loader.engine.document.getElementById(108817849).getProperty('value.value');
+    let folionum = loader.engine.document.getElementById(108817871).getProperty('value.value');
     document.querySelector("blockquote h4").innerHTML = "FOLIO: #" + folionum;
     
     
