@@ -33,10 +33,15 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 
 $(document).ready(function(){
+setTimeout(
+  function() 
+  {
     $('[data-role="input-row"] select').on('change', function(){
     	var demovalue = $(this).val(); 
 	$("#form [data-role='container'][data-type='repeatable']").hide();
 	$("#form [data-role='container'][data-type='repeatable']:contains('" + demovalue + "')").show();
 
     });
+  }, 1000);
+
 });
