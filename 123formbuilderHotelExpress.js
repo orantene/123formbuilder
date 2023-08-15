@@ -14,3 +14,14 @@ window.onload = joinValues;
 
 
 
+let x = document.getElementById("form");
+x.addEventListener("focus", myFocusFunction, true);
+x.addEventListener("blur", myBlurFunction, true);
+
+function myFocusFunction() {
+  document.getElementById("price-00000082-prefix-acc").style.backgroundColor = "#444444";  
+}
+
+function myBlurFunction() {
+  document.getElementById("price-00000082-prefix-acc").style.backgroundColor = "";  
+}
