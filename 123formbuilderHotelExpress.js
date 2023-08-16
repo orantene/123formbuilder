@@ -33,7 +33,6 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 
 $(document).ready(function(){
-		$("[data-id='108844597']").hide();
 setTimeout(
   function() 
   {
@@ -41,6 +40,7 @@ setTimeout(
     	var demovalue = $(this).val(); 
 	$("#form [data-role='container'][data-type='repeatable']").hide();
 	$("#form [data-role='container'][data-type='repeatable']:contains('" + demovalue + "')").show();
+	$("[data-id='108844597']").hide();
 	$("[data-id='108844597']:contains('" + demovalue + "')").show();
     });
   }, 1000);
