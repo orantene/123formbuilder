@@ -3,7 +3,7 @@ setTimeout(function() {
 
 
 	let hotelname = loader.engine.document.getElementById(108818319).getProperty('value.value');
-    document.querySelector(".hotel-name p").innerHTML = "CLIENT: " + hotelname;
+    document.querySelector(".hotel-name p").innerHTML = + hotelname;
 
     let dateDay = document.querySelector("[data-ui-role='ui-element'] #date-00000052-day").innerText;
     let dateMonth = document.querySelector("[data-ui-role='ui-element'] #date-00000052-month").innerText;
@@ -11,7 +11,7 @@ setTimeout(function() {
     document.querySelector(".date p").innerHTML = dateDay +'/'+ dateMonth +'/'+ dateYear;
     
     let folionum = loader.engine.document.getElementById(108817871).getProperty('value.value');
-    document.querySelector(".folio-number p").innerHTML = "FOLIO: #" + folionum;
+    document.querySelector(".folio-number p").innerHTML = + folionum;
     
 
 	//var valueOne = loader.engine.document.getElementById(108817507).getProperty('value.value');
