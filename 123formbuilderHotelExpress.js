@@ -14,11 +14,11 @@ setTimeout(function() {
     document.querySelector(".folio-number p").innerHTML = + folionum;
     
 
-	//var valueOne = loader.engine.document.getElementById(108817507).getProperty('value.value');
-	//var valueTwo = loader.engine.document.getElementById(108817508).getProperty('value.value');
-	//var valueThree = loader.engine.document.getElementById(108817656).getProperty('value.value');
-	//const joinedValues = valueOne + ": " + valueTwo + " | " + valueThree ;
-		  // loader.engine.document.getElementById("108821728").setValue(({"value": joinedValues}));
+	var valueOne = loader.engine.document.getElementById(108817507).getProperty('value.value');
+	var valueTwo = loader.engine.document.getElementById(108817508).getProperty('value.value');
+	var valueThree = loader.engine.document.getElementById(108817656).getProperty('value.value');
+	const joinedValues = valueOne + ": " + valueTwo + " | " + valueThree ;
+		   loader.engine.document.getElementById("108821728").setValue(({"value": joinedValues}));
 }, 60);
 }
 
