@@ -14,11 +14,11 @@ setTimeout(function() {
     document.querySelector(".folio-number p").innerHTML = "FOLIO: #" + folionum;
     
 
-	var valueOne = loader.engine.document.getElementById(108817507).getProperty('value.value');
-	var valueTwo = loader.engine.document.getElementById(108817508).getProperty('value.value');
-	var valueThree = loader.engine.document.getElementById(108817656).getProperty('value.value');
-	const joinedValues = valueOne + ": " + valueTwo + " | " + valueThree ;
-		   loader.engine.document.getElementById("108821728").setValue(({"value": joinedValues}));
+	//var valueOne = loader.engine.document.getElementById(108817507).getProperty('value.value');
+	//var valueTwo = loader.engine.document.getElementById(108817508).getProperty('value.value');
+	//var valueThree = loader.engine.document.getElementById(108817656).getProperty('value.value');
+	//const joinedValues = valueOne + ": " + valueTwo + " | " + valueThree ;
+		  // loader.engine.document.getElementById("108821728").setValue(({"value": joinedValues}));
 }, 60);
 }
 
@@ -33,6 +33,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 
 $(document).ready(function(){
+		$("[data-id='108844597']").hide();
 setTimeout(
   function() 
   {
@@ -40,7 +41,7 @@ setTimeout(
     	var demovalue = $(this).val(); 
 	$("#form [data-role='container'][data-type='repeatable']").hide();
 	$("#form [data-role='container'][data-type='repeatable']:contains('" + demovalue + "')").show();
-
+	$("[data-id='108844597']:contains('" + demovalue + "')").show();
     });
   }, 1000);
 
